@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("SwiftUI for iOS 15")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .padding(.vertical)
     }
 }
 
