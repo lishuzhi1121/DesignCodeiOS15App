@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  DesignCodeiOS15App
 //
-//  Created by SandsLee on 2022/6/5.
+//  Created by SandsLee on 2022/8/1.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -54,18 +54,16 @@ struct ContentView: View {
                 .frame(height: 230)
                 .offset(x: 32, y: -80)
         )
-        
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            HomeView()
                 .previewInterfaceOrientation(.portrait)
             
-            ContentView()
+            HomeView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 13 Pro")
                 .previewInterfaceOrientation(.portrait)

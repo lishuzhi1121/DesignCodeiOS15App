@@ -31,3 +31,13 @@ extension View {
         modifier(StrokeStyle(cornerRadius: cornerRadius))
     }
 }
+
+extension Color {
+    public static func hexColor(_ hex: Int, a: CGFloat = 1.0) -> Color {
+        .init(.sRGB,
+              red: CGFloat(hex >> 16 & 0xFF) / 255.0,
+              green: CGFloat(hex >> 8 & 0xFF) / 255.0,
+              blue: CGFloat(hex & 0xFF) / 255.0,
+              opacity: a)
+    }
+}
